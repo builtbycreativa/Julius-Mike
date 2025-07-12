@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Mona-sans;
+    src: url('/julius_mike/public/mona-sans/Mona-Sans-Regular.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Mona-sans;
+    src: url('/julius_mike/public/mona-sans/Mona-Sans-RegularWide.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
