@@ -10,6 +10,7 @@ const tabs = [
   {
     label: "One-on-One",
     description: "Book a personal interaction or counseling session.",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfeYw5s7LzveysF9RKFJ1QNYh6iI1ygPOjskMrjMecDzSCw1Q/viewform?embedded=true"
   },
   {
     label: "Event/Studio Planning",
