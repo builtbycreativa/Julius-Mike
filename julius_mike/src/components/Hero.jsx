@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 text-white">
       <div className="w-full max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px] space-y-6 text-center md:text-left">
-        <h1 className="text-4xl font-mona sm:text-5xl md:text-6xl lg:text-[80px] font-bold leading-tight md:leading-[90px]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] pt-40 font-bold leading-tight md:leading-[90px]">
           Sound From
           <br />
           The Spirit

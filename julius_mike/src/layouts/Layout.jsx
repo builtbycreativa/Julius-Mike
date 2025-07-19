@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className=" text-white">
+    <div className=" text-white m-0 relative p-0">
       <Navbar />
-      <main className="min-h-screen">
+      <main className="">
         <Outlet /> {/* This is where page content will render */}
       </main>
       {/* <Footer /> */}

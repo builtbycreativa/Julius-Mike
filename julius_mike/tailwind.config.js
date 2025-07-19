@@ -1,0 +1,11 @@
+export default {
+    theme: {
+      extend: {
+        fontFamily: {
+          mona: ['"Mona Sans"', 'sans-serif'],
+        },
+      },
+    },
+    plugins: [],
+  };
+  

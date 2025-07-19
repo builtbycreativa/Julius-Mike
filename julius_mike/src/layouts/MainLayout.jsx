@@ -9,11 +9,11 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="bg-black overflow-hidden">
-      <div className="relative w-screen h-screen">
+    <div className="bg-black top-0 overflow-hidden">
+      <div className="relative w-screen top-0 h-screen">
         <div>
           <img
-            className="absolute inset-0 w-full left-0 h-full object-cover"
+            className="absolute  inset-0 w-full left-0 top-0 h-full object-cover"
             src={JuliusHero}
             alt=""
           />

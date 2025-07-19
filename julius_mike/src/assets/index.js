@@ -1,16 +1,16 @@
 export const FirstNavItems = [
-    { name: "Home", link: "#home" },
+    { name: "Home", link: "/" },
     { name: "About", link: "#about" },
     { name: "Music", link: "#music" },
     { name: "Blog", link: "#blog" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "/booking" },
   ];
 export const SecondNavItems = [
     { name: "Apple", link: "#apple" },
-    { name: "Spotify", link: "#spotify" },
+    { name: "Spotify", link: "https://open.spotify.com/artist/5hStYWHBX6O7ZekiLRGweS?si=nvScHb3zSiCNQVJEIvxj7A" },
     { name: "Deezer", link: "#deezer" },
-    { name: "Instagram", link: "#instagram" },
-    { name: "YouTube", link: "#youtube" },
+    { name: "Instagram", link: "https://www.instagram.com/_juliusmike?igsh=MTUwbmtvbmRvZjJ6ZQ==" },
+    { name: "YouTube", link: "https://www.youtube.com/@_juliusmike" },
   ];
 
 export const JuliusLogo = './src/assets/JuliusLogo.svg';
