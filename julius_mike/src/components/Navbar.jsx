@@ -3,6 +3,8 @@ import { FirstNavItems } from '../assets';
 import { SecondNavItems } from '../assets';
 import { JuliusLogo } from '../assets';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+
 
 export default function() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +20,7 @@ export default function() {
         </div>
 
         {/* Center Logo */}
+        <Link to='/'>
         <div className="flex justify-center">
           <img
             src={JuliusLogo}
@@ -25,6 +28,7 @@ export default function() {
             className="lg:w-[98px] lg:h-[77px] md:w-[65px] md:h-[45px] w-[58.546px] h-[45.903px] object-contain"
           />
         </div>
+        </Link>
 
         {/* Right Nav - Desktop */}
         <div className="hidden md:hidden lg:flex items-center space-x-8 text-white">

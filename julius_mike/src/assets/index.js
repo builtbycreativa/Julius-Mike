@@ -15,4 +15,7 @@ export const SecondNavItems = [
 
 export const JuliusLogo = './src/assets/JuliusLogo.svg';
 export const JuliusHero = './src/assets/section 1.png';
-export const BgGradient = './src/assets/BlackGradient.svg'
+export const BgGradient = './src/assets/BlackGradient.svg';
+export const AboutHero = './src/assets/section-2-image.svg';
+export const TestamentHero = './src/assets/testament-bg.svg';
+export const BlackJulius = './src/assets/blackjulius.jpg';

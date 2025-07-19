@@ -7,14 +7,6 @@ export default defineConfig({
   
   plugins: [
     react(),
-    tailwindcss({
-      theme: {
-        extends: {
-          fontFamily: {
-            MonaSans: ['Mona sans', 'sans-serif']
-          }
-        }
-      }
-    }),
+    tailwindcss({}),
   ],
 })

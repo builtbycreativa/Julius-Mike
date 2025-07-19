@@ -1,24 +1,17 @@
-import { BgGradient, JuliusHero } from "./assets";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+// src/App.jsx
+import { Routes, Route } from "react-router-dom";
+import Layout from "./layouts/Layout";
+import MainLayout from "./layouts/MainLayout"; // This replaces the landing components
+import Booking from "./pages/Booking";
 
 function App() {
   return (
-    <div className="bg-black w-screen overflow-hidden">
-      <div className="relative w-screen h-screen">
-        <div>
-          <img
-            className="absolute inset-0 w-full left-0 h-full object-cover"
-            src={JuliusHero}
-            alt=""
-          />
-          {/* <img src={BgGradient} alt="" /> */}
-        </div>
-        <div className="absolute top-0 left-0 right-0 w-full h-full"/>
-        <Navbar />
-        <Hero />
-      </div>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/booking" element={<Booking />} />
+      </Route>
+    </Routes>
   );
 }
 
