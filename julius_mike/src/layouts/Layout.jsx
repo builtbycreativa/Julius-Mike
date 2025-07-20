@@ -1,6 +1,6 @@
 // src/layouts/Layout.jsx
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer"; // create this if it doesn't exist
+import Footer from "../components/Footer"; // create this if it doesn't exist
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
@@ -10,7 +10,7 @@ const Layout = () => {
       <main className="">
         <Outlet /> {/* This is where page content will render */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

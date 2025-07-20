@@ -4,6 +4,7 @@ import Layout from "./layouts/Layout";
 import MainLayout from "./layouts/MainLayout"; // This replaces the landing components
 import Booking from "./pages/Booking";
 import Blog from "./pages/Blog";
+import MoreAbout from "./pages/MoreAbout";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<MainLayout />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<MoreAbout />} />
       </Route>
     </Routes>
   );

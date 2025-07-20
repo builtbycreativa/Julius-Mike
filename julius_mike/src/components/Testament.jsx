@@ -3,38 +3,38 @@ import { TestamentHero } from "../assets";
 
 const Testament = () => {
   return (
-    <section className="relative w-screen h-[1359px] overflow-hidden">
-      {/* Background image */}
-      <div>
-        <img
-          src={TestamentHero}
-          alt="Testament Hero"
-          className="absolute top-0 left-0 w-full h-full  object-center z-0"
-        />
-      </div>
-      <div className="relative inset-0 bg-black bg-opacity-50 z-10" />
+    <section className="relative w-full min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <img
+        src={TestamentHero}
+        alt="Testament Hero"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+
+      {/* Overlay */}
+      <div className="relative inset-0 bg-black bg-opacity-60 z-10" />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col justify-center items-center h-full px-6 text-center text-white">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-[80px]  font-bold leading-tight mb-4">
+      <div className="relative z-20 flex flex-col justify-center items-center min-h-screen px-4 sm:px-6 md:px-10 text-white text-center">
+        <div className="w-full max-w-4xl space-y-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-bold leading-tight">
             The Testament<br />(Live)
           </h1>
 
-          <p className="text-base font-medium  md:text-lg lg:text-[22px] leading-relaxed mb-10">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
             This anthem from the God In This Music collective, featuring Julius Mike, has become a worship staple stirring hearts and birthing atmosphere wherever it's played. The track delivers a moving medley of praise and prophetic declaration, blending Isaac’s anointing with Julius’s passionate delivery and the authentic sound of The Epoch House.
           </p>
 
           {/* Spotify Embed */}
-          <div className="w-full">
+          <div className="w-full aspect-[16/9] rounded-xl overflow-hidden mt-6">
             <iframe
-              className="w-full rounded-xl"
               src="https://open.spotify.com/embed/album/7Ao2cYvFbCwgz5gx8PQqxb?utm_source=generator"
               width="100%"
-              height="352"
+              height="100%"
               frameBorder="0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
+              className="w-full h-full"
             ></iframe>
           </div>
         </div>
