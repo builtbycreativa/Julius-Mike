@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Appointment = () => {
   return (
-    <section className="relative w-full min-h-screen">
+    <section className="relative w-full min-h-[951px]">
       {/* Background Image */}
       <img
         src={BlackJulius}
