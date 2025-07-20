@@ -81,10 +81,10 @@ const Booking = () => {
           </div>
 
           <div className="mt-10 bg-white/70 backdrop-blur-md shadow-xl rounded-4xl p-6 md:p-10 max-w-3xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-semibold mb-2">
+            <h2 className="text-xl text-black md:text-2xl font-semibold mb-2">
               {tabs[activeTab].label}
             </h2>
-            <p className="text-white text-md mb-4">
+            <p className="text-black text-md mb-4">
               {tabs[activeTab].description}
             </p>
             {tabs[activeTab].formUrl && (
