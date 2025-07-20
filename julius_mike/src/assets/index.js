@@ -29,4 +29,4 @@ export const GridTwo = "https://res.cloudinary.com/de5kq5blj/image/upload/v17529
 export const GridThree = "https://res.cloudinary.com/de5kq5blj/image/upload/v1752973101/Grid-3_dencrf.svg"
 export const GridFour = "https://res.cloudinary.com/de5kq5blj/image/upload/v1752973110/Grid-4_tujkcw.svg"
 export const AllGrid = "https://res.cloudinary.com/de5kq5blj/image/upload/v1752974245/allgrid_nvivzc.png"
-export const BgVideo = "./src/assets/Booking Session Video.mp4"
+export const BgVideo = "https://res.cloudinary.com/de5kq5blj/video/upload/v1753032885/Booking_Session_Video_blusjk.mp4"
