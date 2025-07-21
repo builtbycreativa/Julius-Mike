@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BgVideo } from "../assets";
+import ScrollToTop from "../components/ScrollToTop";
 
 const tabs = [
   {
@@ -110,6 +111,10 @@ const Booking = () => {
           </div>
         </div>
       </div>
+      <div>
+      {/* Your page content */}
+      <ScrollToTop />
+    </div>
     </section>
   );
 };

@@ -4,6 +4,7 @@ import {
   AllGrid,
   MoreJulius,
 } from "../assets";
+import ScrollToTop from "../components/ScrollToTop";
 
 const JuliusIntro = () => {
   const navigate = useNavigate();
@@ -49,6 +50,10 @@ const JuliusIntro = () => {
         <div className="w-full">
           <img src={AllGrid} alt="Julius Mike Gallery" className="w-full h-auto object-cover rounded-lg" />
         </div>
+        <div>
+      {/* Your page content */}
+      <ScrollToTop />
+    </div>
       </section>
     </div>
   );

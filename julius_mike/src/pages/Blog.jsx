@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { BlueJulius } from '../assets';
 import { gsap } from 'gsap';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Blog = () => {
   const textRef = useRef(null);
@@ -55,6 +56,10 @@ const Blog = () => {
           {animatedText}
         </h1>
       </div>
+      <div>
+      {/* Your page content */}
+      <ScrollToTop />
+    </div>
     </div>
   );
 };

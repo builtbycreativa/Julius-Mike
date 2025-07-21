@@ -6,6 +6,7 @@ import About from "../components/About";
 import Testament from "../components/Testament";
 import Appointment from "../components/Appointment";
 import { Outlet } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 
 const MainLayout = () => {
   return (
@@ -29,6 +30,10 @@ const MainLayout = () => {
       </div>
       <Appointment />
       <Outlet /> {/* Optional: for nested routes if needed */}
+      <div>
+      {/* Your page content */}
+      <ScrollToTop />
+    </div>
     </div>
   );
 };
