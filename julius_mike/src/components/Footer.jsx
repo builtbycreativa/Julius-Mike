@@ -34,16 +34,15 @@ import {
   
           {/* Center: Navigation Links */}
           <div className="flex flex-col gap-3 text-sm md:text-base w-full md:w-auto">
-            <a href="#" className="hover:text-gray-300">About</a>
-            <a href="#" className="hover:text-gray-300">Music</a>
-            <a href="#" className="hover:text-gray-300">Ministry</a>
-            <a href="#" className="hover:text-gray-300">Blog</a>
-            <a href="#" className="hover:text-gray-300">Contact</a>
+            <a href="/about" className="hover:text-gray-300">About</a>
+            <a href="/music" className="hover:text-gray-300">Music</a>
+            <a href="/blog" className="hover:text-gray-300">Blog</a>
+            <a href="contact" className="hover:text-gray-300">Contact</a>
           </div>
   
           {/* Right: Contact */}
           <div className="text-sm md:text-base w-full md:w-auto mt-4 md:mt-0">
-            <p>hello@juliusmike.com</p>
+            <p>juliusmikeofficial@gmail.com</p>
           </div>
         </div>
   

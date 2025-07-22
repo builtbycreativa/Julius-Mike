@@ -54,7 +54,7 @@ const Booking = () => {
       <div className="fixed top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]" />
 
       {/* Page Content */}
-      <div className="relative top-40 z-10 px-4 md:px-10 py-16 min-h-screen">
+      <div className="relative top-30 z-10 px-4 md:px-10 py-16 min-h-screen">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Your Next Encounter Starts Here
@@ -104,7 +104,7 @@ const Booking = () => {
             )}
           </div>
 
-          <div className="mt-10">
+          <div className="relative py-16">
             <p className="text-lg font-medium italic text-white">
               “Select your purpose and let’s walk in obedience.”
             </p>

@@ -5,6 +5,7 @@ import MainLayout from "./layouts/MainLayout"; // This replaces the landing comp
 import Booking from "./pages/Booking";
 import Blog from "./pages/Blog";
 import MoreAbout from "./pages/MoreAbout";
+import MusicSection from "./pages/Music";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<MoreAbout />} />
+        <Route path="/music" element={<MusicSection />} />
       </Route>
     </Routes>
   );

@@ -17,11 +17,11 @@ const Appointment = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-10 text-center text-white">
         <div className="max-w-4xl space-y-6">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight">
             One Sound Can Shift a Room. Will It Be Yours?
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium">
+          <p className="text-[14px] lg:text-[22px] font-medium">
             Whether you’re planning a worship night, a youth convention, a prayer
             gathering, or you simply want to testify about how God has moved
             through this ministry, we’d love to hear from you. Julius is available

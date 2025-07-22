@@ -17,12 +17,12 @@ const About = () => {
 
       {/* Text Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left text-white">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-          More than a Voice — A Vessel
+        <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight tracking-tight">
+          More than a Voice, A Vessel
         </h1>
 
-        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium leading-relaxed">
-          Julius Mike is a prophetic worship leader and minstrel under the spiritual covering of The Epoch House, featured throughout the God In This Music collective and album. His voice echoes in tracks like “The Testament” and “Praise,” bringing a heartfelt devotion and deep encounter into every live session. With Paul’s declaration “God is in this music” as his anthem, Julius ministers beyond melody—ushering heaven into hearts and crafting altars wherever he goes.
+        <p className="mt-4 sm:mt-6 text-[14px] lg:text-[22px] font-medium leading-relaxed">
+          Julius Mike is a prophetic worship leader and minstrel under the spiritual covering of The Epoch House, featured throughout the God In This Music collective and album. His voice echoes in tracks like “The Testament” and “Praise,” bringing a heartfelt devotion and deep encounter into every live session. With Paul’s declaration “God is in this music” as his anthem, Julius ministers beyond melody, ushering heaven into hearts and crafting altars wherever he goes.
         </p>
 
         <Link to="/about">
