@@ -46,11 +46,11 @@ const MusicSection = () => {
           alt="Hero"
           className="absolute inset-0 w-full xl:w-[847px] lg:w-[550px] h-full object-cover opacity-70"
         />
-        <div className="relative z-10 flex flex-col justify-center h-full lg:max-w-5xl xl:max-w-6xl xl:ml-[640px] lg:ml-[420px] px-6">
-          <h1 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[80px] font-bold leading-tight">
+        <div className="relative z-10 flex flex-col justify-center h-full lg:max-w-5xl xl:max-w-6xl xl:ml-[640px] lg:ml-[420px] px-6 pt-30 md:pt-20">
+          <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight">
             Sounds of <br /> Heaven. <br /> Songs of Revival.
           </h1>
-          <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl">
+          <p className="mt-4 sm:mt-6 text-[14px] lg:text-[22px] text-gray-200 max-w-2xl mb-10">
             Experience the soul-stirring sound of Julius Mike where spirit meets
             melody. From anointed worship moments to spirit-led studio
             creations, Julius brings music that heals, uplifts, and ignites
@@ -63,7 +63,7 @@ const MusicSection = () => {
       {/* Music Section */}
       <div className="relative px-6 md:px-10 lg:px-24 -mt-10 md:-mt-16 xl:-mt-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <h2 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[80px] font-bold mb-6 md:mb-10">
+          <h2 className="text-[60px] lg:text-[80px] font-bold mb-6 md:mb-10">
             Music
           </h2>
           <div className="flex flex-wrap gap-4 items-center">
@@ -76,7 +76,7 @@ const MusicSection = () => {
             <a href="https://www.youtube.com/@_juliusmike">
               <img src={YouTubeLogo} alt="YouTube" className="h-8 w-8" />
             </a>
-            <button className="border px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition-all">
+            <button className="border px-[36px] py-[20px] rounded-full text-sm hover:bg-white hover:text-black transition-all">
               Julius's Music
             </button>
           </div>
@@ -88,7 +88,7 @@ const MusicSection = () => {
               <img
                 src={album.image}
                 alt={album.title}
-                className="w-[350px] h-[250px] md:h-[300px]  object-cover"
+                className="w-[380px] h-[250px] md:h-[300px]  object-cover"
               />
               <div className="p-4">
                 <h3 className="text-lg md:text-xl font-semibold mb-2">
@@ -110,7 +110,7 @@ const MusicSection = () => {
           <h2 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[80px] font-bold mb-6">
             Featured Live <br /> Sessions
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
+          <p className="text-[14px] lg:text-[22px] text-gray-300 max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
             Dive into the sacred soundscape of our Featured Live Sessions —
             anointed, spontaneous moments captured in the presence of God.
             Experience the Soaking Worship Session (Campus Invasion '24)
@@ -149,12 +149,12 @@ const MusicSection = () => {
 
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 pb-20 space-y-10 mt-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <h2 className="text-[28px] sm:text-[40px] md:text-[60px] lg:text-[80px] font-bold">
+          <h2 className="text-[60px] lg:text-[80px] font-bold">
             Book Julius Mike
           </h2>
           <button
             onClick={() => navigate("/booking")}
-            className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300 text-base md:text-lg"
+            className="border border-white px-[36px] py-[20px] rounded-full hover:bg-white hover:text-black transition duration-300 text-base md:text-lg"
           >
             Book Now
           </button>

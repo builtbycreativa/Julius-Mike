@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FirstNavItems, SecondNavItems, JuliusLogo } from "../assets";
 import { HiMenu, HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   // Utility function to render correct link type
-  const renderNavItem = (item, i) => {
-    const isExternal = item.link?.startsWith("http") || item.href?.startsWith("http");
-    const href = item.link || item.href;
+  const location = useLocation();
+ const renderNavItem = (item, i) => {
+  const isExternal = item.link?.startsWith("http") || item.href?.startsWith("http");
+  const href = item.link || item.href;
+  const isActive = location.pathname === href;
+
+  const baseClasses = "relative pb-1 transition-all duration-300";
+  const activeUnderline = isActive ? "after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-white" : "";
+  const hoverUnderline = "hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-white";
+
+  const finalClasses = `hover:text-gray-300 ${baseClasses} ${activeUnderline} ${hoverUnderline}`;
+
+
 
     return isExternal ? (
       <a
@@ -25,7 +36,7 @@ export default function Navbar() {
       <Link
         key={i}
         to={href}
-        className="hover:text-gray-300"
+        className={finalClasses}
         onClick={() => setIsOpen(false)} // Close menu on click (mobile)
       >
         {item.name}
@@ -33,10 +44,26 @@ export default function Navbar() {
     );
   };
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
+
   return (
     <div className="absolute w-full top-[25px] flex justify-center z-50">
       <div className="flex items-center lg:justify-around justify-between bg-black/50 rounded-full px-6 py-4 w-full max-w-[389px] h-[78px] lg:h-[97px] lg:max-w-[1366px]">
-        
         {/* Left Nav - Desktop */}
         <div className="hidden md:hidden lg:flex items-center space-x-8 font-myfont text-white">
           {FirstNavItems.map(renderNavItem)}
@@ -69,10 +96,24 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-[110px] w-full max-w-[1366px] bg-black/80 text-white rounded-xl py-4 px-6 md:hidden">
-          <div className="flex flex-col items-center space-y-4 font-myfont">
+        <div
+          ref={menuRef}
+          className="fixed inset-0 z-40 bg-black text-white md:hidden flex flex-col justify-between py-10 px-6"
+        >
+          {/* Close Button */}
+          <div className="flex justify-end">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white text-3xl"
+            >
+              <HiX />
+            </button>
+          </div>
+
+          {/* Menu Items */}
+          <div className="flex flex-col items-center justify-center space-y-6 font-myfont flex-grow">
             {FirstNavItems.concat(SecondNavItems).map(renderNavItem)}
           </div>
         </div>

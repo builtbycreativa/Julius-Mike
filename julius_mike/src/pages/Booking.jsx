@@ -104,7 +104,7 @@ const Booking = () => {
             )}
           </div>
 
-          <div className="relative py-16">
+          <div className="relative pb-20">
             <p className="text-lg font-medium italic text-white">
               “Select your purpose and let’s walk in obedience.”
             </p>
