@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="w-full max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1200px] space-y-6 text-center md:text-left">
         <h1
           ref={headlineRef}
-          className="text-[60px] lg:text-[80px] pt-40 font-MonaSansWide leading-tight md:leading-[90px]"
+          className="text-[60px] lg:text-[80px] pt-20 lg:pt-40 font-MonaSansWide leading-tight md:leading-[90px]"
         >
           Sound From
           <br />
