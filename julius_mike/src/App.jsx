@@ -1,5 +1,6 @@
 // src/App.jsx
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
+import Top from "./components/Top";
 import Layout from "./layouts/Layout";
 import MainLayout from "./layouts/MainLayout"; // This replaces the landing components
 import Booking from "./pages/Booking";
@@ -9,6 +10,8 @@ import MusicSection from "./pages/Music";
 
 function App() {
   return (
+    <>
+      <Top />
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<MainLayout />} />
@@ -18,6 +21,7 @@ function App() {
         <Route path="/music" element={<MusicSection />} />
       </Route>
     </Routes>
+    </>
   );
 }
 

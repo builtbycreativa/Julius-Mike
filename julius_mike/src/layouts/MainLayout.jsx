@@ -11,7 +11,7 @@ import ScrollToTop from "../components/ScrollToTop";
 const MainLayout = () => {
   return (
     <div className="bg-black top-0 overflow-hidden">
-      <div className="relative w-screen top-0 h-screen">
+      <div className="relative w-screen top-0 h-[900px]">
         <div>
           <img
             className="absolute  inset-0 w-full left-0 top-0 h-full object-cover"

@@ -11,7 +11,7 @@ import {
 import { FaYoutube } from "react-icons/fa";
 import Testament from "../components/Testament";
 import ScrollToTop from "../components/ScrollToTop";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const featuredSessions = [
   {
@@ -22,6 +22,7 @@ const featuredSessions = [
       "https://res.cloudinary.com/de5kq5blj/image/upload/v1753192800/youtube_wkmiya.svg",
     iconT:
       "https://res.cloudinary.com/de5kq5blj/image/upload/v1753192800/youtube_wkmiya.svg",
+      link: "https://youtu.be/wpG1jUnnI7o?si=BTAno1O9zRMRRWnX"
   },
   {
     title: "SOAKING WORSHIP SESSION (Feat. Julius Mike)...",
@@ -31,6 +32,7 @@ const featuredSessions = [
       "https://res.cloudinary.com/de5kq5blj/image/upload/v1753192800/youtube_wkmiya.svg",
     iconT:
       "https://res.cloudinary.com/de5kq5blj/image/upload/v1753192800/youtube_wkmiya.svg",
+      link: "https://youtu.be/XyTQNjoOiXI?si=gJicetOoaYXVzNl5"
   },
 ];
 
@@ -47,10 +49,10 @@ const MusicSection = () => {
           className="absolute inset-0 w-full xl:w-[847px] lg:w-[550px] h-full object-cover opacity-70"
         />
         <div className="relative z-10 flex flex-col justify-center h-full lg:max-w-5xl xl:max-w-6xl xl:ml-[640px] lg:ml-[420px] px-6 pt-30 md:pt-20">
-          <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight">
+          <h1 className="text-[60px] lg:text-[80px] font-MonaSansWide leading-tight">
             Sounds of <br /> Heaven. <br /> Songs of Revival.
           </h1>
-          <p className="mt-4 sm:mt-6 text-[14px] lg:text-[22px] text-gray-200 max-w-2xl mb-10">
+          <p className="mt-4 sm:mt-6 text-[14px] lg:text-[22px] font-MonaSans text-gray-200 max-w-2xl mb-10">
             Experience the soul-stirring sound of Julius Mike where spirit meets
             melody. From anointed worship moments to spirit-led studio
             creations, Julius brings music that heals, uplifts, and ignites
@@ -61,9 +63,9 @@ const MusicSection = () => {
       </div>
 
       {/* Music Section */}
-      <div className="relative px-6 md:px-10 lg:px-24 -mt-10 md:-mt-16 xl:-mt-20">
+      <div className="relative px-6 md:px-10 lg:px-24 -mt-13 md:-mt-12 xl:-mt-17">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <h2 className="text-[60px] lg:text-[80px] font-bold mb-6 md:mb-10">
+          <h2 className="text-[60px] lg:text-[80px] font-MonaSansWide ">
             Music
           </h2>
           <div className="flex flex-wrap gap-4 items-center">
@@ -76,13 +78,13 @@ const MusicSection = () => {
             <a href="https://www.youtube.com/@_juliusmike">
               <img src={YouTubeLogo} alt="YouTube" className="h-8 w-8" />
             </a>
-            <button className="border px-[36px] py-[20px] rounded-full text-sm hover:bg-white hover:text-black transition-all">
+            <button className="border px-[36px] py-[20px] rounded-full text-[14px] cursor-pointer lg:text-[22px] font-MonaSans hover:bg-white hover:text-black transition-all">
               Julius's Music
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] pt-10 md:pt-20 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-MonaSans gap-[20px] pt-10 md:pt-20 mb-20">
           {albums.map((album, index) => (
             <div key={index} className="rounded-md shadow-md overflow-hidden">
               <img
@@ -107,10 +109,10 @@ const MusicSection = () => {
           <img src={FeaturedBg} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10">
-          <h2 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[80px] font-bold mb-6">
+          <h2 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[80px] font-MonaSansWide mb-6">
             Featured Live <br /> Sessions
           </h2>
-          <p className="text-[14px] lg:text-[22px] text-gray-300 max-w-4xl mx-auto leading-relaxed mb-10 md:mb-16">
+          <p className="text-[14px] lg:text-[22px] text-gray-300 max-w-4xl mx-auto font-MonaSans leading-relaxed mb-10 md:mb-16">
             Dive into the sacred soundscape of our Featured Live Sessions —
             anointed, spontaneous moments captured in the presence of God.
             Experience the Soaking Worship Session (Campus Invasion '24)
@@ -121,17 +123,19 @@ const MusicSection = () => {
             recorded live at SFZ24.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-MonaSans justify-items-center">
             {featuredSessions.map((session, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-xl overflow-hidden shadow-lg max-w-md w-full"
               >
-                <img
+                <Link to={session.link}>
+                  <img
                   src={session.src}
                   alt="YouTube Thumbnail"
                   className="w-full h-[200px] md:h-[300px] object-cover"
                 />
+                </Link>
                 <div className="text-black p-4 text-left">
                   <h3 className="text-lg font-semibold">{session.title}</h3>
                   <div className="flex items-center gap-2 pt-3">
@@ -149,12 +153,12 @@ const MusicSection = () => {
 
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 pb-20 space-y-10 mt-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <h2 className="text-[60px] lg:text-[80px] font-bold">
+          <h2 className="text-[60px] lg:text-[80px] font-MonaSansWide">
             Book Julius Mike
           </h2>
           <button
             onClick={() => navigate("/booking")}
-            className="border border-white px-[36px] py-[20px] rounded-full hover:bg-white hover:text-black transition duration-300 text-base md:text-lg"
+            className="border border-white px-[36px] py-[20px] rounded-full hover:bg-white hover:text-black transition font-MonaSans cursor-pointer duration-300 text-[14px] lg:text-[22px]"
           >
             Book Now
           </button>

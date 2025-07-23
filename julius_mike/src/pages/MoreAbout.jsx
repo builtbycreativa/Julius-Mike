@@ -20,13 +20,13 @@ const JuliusIntro = () => {
         </div>
 
         {/* Text */}
-        <div className="relative p-5 xl:ml-[761px] w-full lg:w-[735px] flex flex-col justify-center pt-[240px] space-y-6 h-[800px] lg:h-[1108px]">
-          <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight tracking-wide ">
+        <div className="relative  xl:ml-[691px] ml-3  flex flex-col justify-center pt-[180px] space-y-6 h-[800px] lg:h-[1108px]">
+          <h1 className="text-[55px] lg:text-[80px] max-w-[6xl] lg:max-w-[935px] font-MonaSansWide leading-tight tracking-wide ">
             The Journey, <br />
             The Sound, <br />
             The Assignment.
           </h1>
-          <p className="text-[14px] lg:text-[22px] leading-relaxed">
+          <p className="text-[14px] lg:text-[22px] max-w-[380px] lg:max-w-[732px] font-MonaSans leading-relaxed">
             Julius Mike is a prophetic worship leader and sound carrier sent to
             awaken hearts to the presence of God. Rooted in New Testament
             Christian Mission (NTCM) and now serving under The Epoch House,
@@ -42,12 +42,12 @@ const JuliusIntro = () => {
       {/* Gallery Section */}
       <section className="relative max-w-7xl mx-auto px-6 md:px-12 pb-20 space-y-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <h2 className="text-[60px] lg:text-[80px] font-bold">
+          <h2 className="text-[60px] lg:text-[80px] font-MonaSansWide">
             Book Julius Mike
           </h2>
           <button
             onClick={() => navigate("/booking")}
-            className="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300 text-base md:text-lg"
+            className="border border-white px-6 py-3 rounded-full cursor-pointer font-MonaSans hover:bg-white hover:text-black transition duration-300 text-[14px] lg:text-[22px]"
           >
             Book Now
           </button>

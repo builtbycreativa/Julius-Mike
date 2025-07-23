@@ -65,7 +65,7 @@ export default function Navbar() {
     <div className="absolute w-full top-[25px] flex justify-center z-50">
       <div className="flex items-center lg:justify-around justify-between bg-black/50 rounded-full px-6 py-4 w-full max-w-[389px] h-[78px] lg:h-[97px] lg:max-w-[1366px]">
         {/* Left Nav - Desktop */}
-        <div className="hidden md:hidden lg:flex items-center space-x-8 font-myfont text-white">
+        <div className="hidden md:hidden lg:flex items-center space-x-8 font-MonaSans text-white">
           {FirstNavItems.map(renderNavItem)}
         </div>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
         </Link>
 
         {/* Right Nav - Desktop */}
-        <div className="hidden md:hidden lg:flex items-center space-x-8 text-white">
+        <div className="hidden md:hidden lg:flex items-center font-MonaSans space-x-8 text-white">
           {SecondNavItems.map(renderNavItem)}
         </div>
 
@@ -100,7 +100,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           ref={menuRef}
-          className="fixed inset-0 z-40 bg-black text-white md:hidden flex flex-col justify-between py-10 px-6"
+          className="fixed inset-0 z-40 bg-black text-white md:hidden font-MonaSans flex flex-col justify-between py-10 px-6"
         >
           {/* Close Button */}
           <div className="flex justify-end">
@@ -113,7 +113,7 @@ export default function Navbar() {
           </div>
 
           {/* Menu Items */}
-          <div className="flex flex-col items-center justify-center space-y-6 font-myfont flex-grow">
+          <div className="flex flex-col items-center justify-center space-y-6 font-MonaSans flex-grow">
             {FirstNavItems.concat(SecondNavItems).map(renderNavItem)}
           </div>
         </div>

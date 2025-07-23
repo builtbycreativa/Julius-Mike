@@ -50,7 +50,7 @@ const Blog = () => {
       {/* Overlay Content */}
       <div className="relative z-20 flex items-center justify-center w-full h-full text-white text-center">
         <h1
-          className="text-4xl md:text-6xl lg:text-[80px] font-bold px-6 py-4 rounded-lg"
+          className="text-4xl md:text-6xl lg:text-[80px] font-MonaSansWide px-6 py-4 rounded-lg"
           ref={textRef}
         >
           {animatedText}

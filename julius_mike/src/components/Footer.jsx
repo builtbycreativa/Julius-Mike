@@ -5,6 +5,7 @@ import {
     JuliusLogo,
     YouTube,
   } from '../assets';
+  import { Link } from 'react-router-dom';
   
   export default function Footer() {
     return (
@@ -19,35 +20,35 @@ import {
           
           {/* Left: Logo + Socials */}
           <div className="flex flex-col items-start gap-6 w-full md:w-auto">
-            <img
+            <Link to="/"><img
               src={JuliusLogo}
               alt="Julius Mike Logo"
               className="w-[98px] h-[78px] object-contain"
-            />
+            /></Link>
   
             <div className="flex space-x-4">
-              <img src={Facebook} alt="Facebook" className="bg-[#2F2F2F] p-2 rounded-full w-9 h-9" />
-              <img src={YouTube} alt="YouTube" className="bg-[#2F2F2F] p-2 rounded-full w-9 h-9" />
-              <img src={Instagram} alt="Instagram" className="bg-[#2F2F2F] p-2 rounded-full w-9 h-9" />
+              <Link to="https://www.facebook.com/mike.julius.949198"><img src={Facebook} alt="Facebook" className="bg-[#2F2F2F] p-2 cursor-pointer rounded-full w-9 h-9" /></Link>
+              <Link to="https://www.youtube.com/@_juliusmike"><img src={YouTube} alt="Facebook" className="bg-[#2F2F2F] p-2 cursor-pointer rounded-full w-9 h-9" /></Link>
+              <Link to="https://www.instagram.com/_juliusmike?igsh=MTUwbmtvbmRvZjJ6ZQ=="><img src={Instagram} alt="Facebook" className="bg-[#2F2F2F] p-2 cursor-pointer rounded-full w-9 h-9" /></Link>
             </div>
           </div>
   
           {/* Center: Navigation Links */}
-          <div className="flex flex-col gap-3 text-sm md:text-base w-full md:w-auto">
+          <div className="flex flex-col gap-3 text-[14px] font-MonaSans lg:text-[22px] w-full md:w-auto">
             <a href="/about" className="hover:text-gray-300">About</a>
             <a href="/music" className="hover:text-gray-300">Music</a>
             <a href="/blog" className="hover:text-gray-300">Blog</a>
-            <a href="contact" className="hover:text-gray-300">Contact</a>
+            <a href="/booking" className="hover:text-gray-300">Contact</a>
           </div>
   
           {/* Right: Contact */}
-          <div className="text-sm md:text-base w-full md:w-auto mt-4 md:mt-0">
+          <div className="text-[14px] lg:text-[22px] w-full md:w-auto mt-4 md:mt-0">
             <p>juliusmikeofficial@gmail.com</p>
           </div>
         </div>
   
         {/* Bottom Copyright Section */}
-        <div className="relative z-10 flex flex-col md:flex-row justify-between items-center mt-8 text-xs md:text-sm text-white/70 px-2 md:px-0 gap-4 md:gap-0">
+        <div className="relative z-10 flex flex-col md:flex-row justify-between font-MonaSans items-center mt-8 text-xs md:text-sm text-white/70 px-2 md:px-0 gap-4 md:gap-0">
           <p className="text-center">© 2025 Julius Mike. Built with ♡ by Creativa</p>
           <a href="#" className="hover:text-white">Privacy</a>
         </div>

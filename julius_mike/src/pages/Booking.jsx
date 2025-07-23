@@ -56,21 +56,21 @@ const Booking = () => {
       {/* Page Content */}
       <div className="relative top-30 z-10 px-4 md:px-10 py-16 min-h-screen">
         <div className="max-w-5xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+          <h1 className="text-[60px] lg:text-[80px] leading-[115%] font-MonaSansWide">
             Your Next Encounter Starts Here
           </h1>
-          <p className="text-base sm:text-lg max-w-3xl mx-auto">
+          <p className="text-[14px] lg:text-[22px] font-MonaSans max-w-3xl mx-auto">
             Bring the atmosphere of Heaven to your gathering. Julius is
             available for ministry across various formats and needs. Choose the
             appropriate tab below to proceed:
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
+          <div className="flex flex-wrap justify-center font-MonaSans gap-4 mt-10">
             {tabs.map((tab, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`px-6 py-3 rounded-full border text-sm md:text-base transition duration-200 font-medium ${
+                className={`px-[36px] py-[20px] rounded-full border text-[14px] cursor-pointer lg:text-[22px] transition duration-200 font-medium ${
                   activeTab === index
                     ? "bg-white text-black border-white"
                     : "border-gray-300 text-white hover:bg-gray-200 hover:text-black"
@@ -81,7 +81,7 @@ const Booking = () => {
             ))}
           </div>
 
-          <div className="mt-10 bg-white/70 backdrop-blur-md shadow-xl rounded-4xl p-6 md:p-10 max-w-3xl mx-auto">
+          <div className="mt-10 bg-white/70 backdrop-blur-md shadow-xl rounded-4xl font-MonaSans p-6 md:p-10 max-w-3xl mx-auto">
             <h2 className="text-xl text-black md:text-2xl font-semibold mb-2">
               {tabs[activeTab].label}
             </h2>
@@ -105,7 +105,7 @@ const Booking = () => {
           </div>
 
           <div className="relative pb-20">
-            <p className="text-lg font-medium italic text-white">
+            <p className="text-lg italic text-white font-MonaSans">
               “Select your purpose and let’s walk in obedience.”
             </p>
           </div>

@@ -1,14 +1,32 @@
+@font-face {
+  font-family: "Mona Sans Wide";
+  src: url("./assets/fonts/Mona-Sans-BoldWide.woff") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("./assets/fonts/Mona-Sans-Medium.woff") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 @import "tailwindcss";
 
+
+@theme {
+    --font-MonaSansWide: Mona Sans Wide
+}
+@theme {
+    --font-MonaSans: Mona Sans
+}
 #root {
     height: 100%;
 
 }
 
-* {
-    font-family: 'font mona' sans-serif;
+html {
+  scroll-behavior: smooth;
 }
-*{
-    font-family: 'Mona Sans', sans-serif;
-  }
+
   

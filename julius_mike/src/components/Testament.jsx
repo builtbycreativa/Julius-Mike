@@ -17,11 +17,11 @@ const Testament = () => {
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-center lg:mt-10 items-center min-h-screen px-4 sm:px-6 md:px-10 text-white text-center">
         <div className="w-full max-w-4xl space-y-6">
-          <h1 className="text-[60px] lg:text-[80px] font-bold leading-tight">
+          <h1 className="text-[60px] lg:text-[80px] font-MonaSansWide leading-tight">
             The Testament<br />(Live)
           </h1>
 
-          <p className="text-[14px] sm:text-base  lg:text-[22px] leading-relaxed">
+          <p className="text-[14px] sm:text-base font-MonaSans lg:text-[22px] leading-relaxed">
             This anthem from the God In This Music collective, featuring Julius Mike, has become a worship staple stirring hearts and birthing atmosphere wherever it's played. The track delivers a moving medley of praise and prophetic declaration, blending Isaac’s anointing with Julius’s passionate delivery and the authentic sound of The Epoch House.
           </p>
 
