@@ -20,6 +20,11 @@
 @theme {
     --font-MonaSans: Mona Sans
 }
+
+.animated-element {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
 #root {
     height: 100%;
 
