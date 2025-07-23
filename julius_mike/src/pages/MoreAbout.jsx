@@ -20,7 +20,7 @@ const JuliusIntro = () => {
         </div>
 
         {/* Text */}
-        <div className="relative  xl:ml-[691px] ml-3  flex flex-col justify-center pt-[180px] space-y-6 h-[800px] lg:h-[1108px]">
+        <div className="relative  xl:ml-[691px] ml-10  flex flex-col justify-center pt-[180px] space-y-6 h-[800px] lg:h-[1108px]">
           <h1 className="text-[55px] lg:text-[80px] max-w-[6xl] lg:max-w-[935px] font-MonaSansWide leading-tight tracking-wide ">
             The Journey, <br />
             The Sound, <br />
